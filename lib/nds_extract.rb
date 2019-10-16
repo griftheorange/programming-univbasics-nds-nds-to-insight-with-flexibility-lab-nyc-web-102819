@@ -51,7 +51,7 @@ def movies_with_director_key(name, movies_collection)
   new_array = []
   
   movies_collection.length.times { |i|
-    new_array[i] = movie_with_director_name(name, movies_collection)
+    new_array[i] = movie_with_director_name(name, directors_database)
   }
   
 end
