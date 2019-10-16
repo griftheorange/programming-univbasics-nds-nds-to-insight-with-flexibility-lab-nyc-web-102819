@@ -36,6 +36,10 @@ end
 def movies_with_director_key(name, movies_collection)
   pp movies_collection
   
+  movies_collection.length.times { |i|
+    movies_collection[i][:director_name] = name
+  }
+  movies_collection
 end
 
 
